@@ -19,13 +19,24 @@ function printStacks() {
   console.log("c: " + stacks.c);
 }
 
-function movePiece() {
-  // Your code here
+// making a movePiece function with parameters
+function movePiece(startStack, endStack) {
+// created a variable "removedblock" also creating parameters
+  var removedBlock = stacks[startStack].pop();
+  stacks[endStack].push(removedBlock)
 
 }
 
-function isLegal() {
-  // Your code here
+function isLegal(startStack, endStack) {
+  // going to be using the if else condition.
+  // if starting block is smaller than ending block, allow move
+  // else return 'illegal move'
+  if (stacks[startStack]) {
+    my_array[my_array.length - 1]
+    //stacks[start]
+  } else {
+    
+  }  
 
 }
 
@@ -36,7 +47,7 @@ function checkForWin() {
 
 function towersOfHanoi(startStack, endStack) {
   // Your code here
-
+ movePiece(startStack, endStack)
 }
 
 function getPrompt() {

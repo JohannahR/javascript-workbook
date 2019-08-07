@@ -9,11 +9,11 @@ function getUser(){
         .then((user) =>{
         let authors = data.results;
 return authors.map(function(author) {
-    let li = createNode('li'),
-    img = createNode('img'),
-    span = createNode('span');
-    img.src = author.picture.medium;
-    span.innerHTML = $;{author.name.first} $;{author.name.last};
+let li = createNode('li'),
+img = createNode('img'),
+span = createNode('span');
+img.src = author.picture.medium;
+span.innerHTML = ${author.name.first}, ${author.name.last};
 append(li, img);
 append(li, span);
 append(ul, li);
@@ -32,5 +32,7 @@ console.log(JSON.stringify(error));
                 <li>Location: $(location.city), $(location.state) </li>
             </ul>;
             }
-        ,document.getElementById("input").innerHTML = output       
-    });
+        ,document.getElementById("input").innerHTML = output;        
+    })
+   
+
