@@ -15,7 +15,7 @@ var newPeople=[];
   newPeople.push(people["firstName", "lastName", "birthDate", "gender"])
 });
 
-console.log(newPeople);s
+console.log(newPeople);
     
     
 
